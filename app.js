@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const socketio = require('socket.io');
-const serverless = require('serverless-http');
 const http = require('http');
 
 app.use(express.json());
@@ -27,4 +26,4 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
-module.exports.handler = serverless(app);
+app.listen(3000)
