@@ -1,8 +1,8 @@
 {
   "name": "routesystem",
-  "main": "api/server.js",
+  "main": "api/app.js",
   "scripts": {
-    "start": "node api/server.js"
+    "start": "node api/app.js"
   },
   "keywords": [],
   "author": "",
