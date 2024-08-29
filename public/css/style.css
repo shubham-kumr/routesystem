@@ -86,11 +86,17 @@ button:hover {
 }
 
 /* Responsive Styles */
+@media (max-width: 1024px) {
+    #floating-column {
+        width: 200px;
+    }
+}
+
 @media (max-width: 768px) {
     #floating-column {
         width: 180px;
-        top: 80px;
-        left: 11px;
+        top: 70px;
+        left: 10px;
         padding: 10px;
     }
 
@@ -122,6 +128,8 @@ button:hover {
         width: 100%;
         top: 10px;
         left: 0;
+        padding: 8px;
+        box-shadow: none;
     }
 
     #floating-column h3 {
@@ -144,5 +152,37 @@ button:hover {
 
     #travel-time {
         font-size: 11px;
+    }
+}
+
+/* Additional media query for devices with a screen width around 360px (like Samsung A31) */
+@media (max-width: 360px) {
+    #floating-column {
+        width: 100%;
+        top: 5px;
+        left: 0;
+        padding: 5px;
+    }
+
+    #floating-column h3 {
+        font-size: 12px;
+    }
+
+    .input-group label {
+        font-size: 10px;
+    }
+
+    .input-group input {
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    #travel-time {
+        font-size: 10px;
     }
 }
