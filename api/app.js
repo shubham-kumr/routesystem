@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 
 // Route to render index.ejs
 app.get('/', (req, res) => {
+    console.log('Rendering index.ejs');
     res.render('index');
 });
 
